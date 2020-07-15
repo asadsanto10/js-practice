@@ -8,7 +8,7 @@ function leapYear(strtYear, endYear) {
         }
     }
     return yeardata;
-}   
+}
 
 
 console.log(leapYear(2000, 2200));
