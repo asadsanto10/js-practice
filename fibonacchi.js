@@ -9,7 +9,7 @@ function fibonacci(n) {
     }
     return fibo;
  }
- console.log(fibonacci(100));
+ console.log(fibonacci(10));
 
 //  recursibe fibonacci
 

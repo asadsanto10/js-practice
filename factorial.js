@@ -1,10 +1,20 @@
-function fact(n){
-    if (n==0){
-        return 1;
-    }
-    else{
-        return n * fact(n-1);
-    }
+let factorialInput = 6;
+let fact = 1;
+for (let i = 1; i <= factorialInput; i++) {
+    fact = fact * i;
+    console.log(i, fact);
 }
-var result = fact(10);
-console.log(result);
+console.log(fact);
+// function factorial(num) {
+//     let factorial = 1;
+//     for (let i = 1; i <= num; i++){
+//         factorial = factorial * i;
+//     }
+//     return factorial;
+// }
+
+// console.log(factorial(6));
+
+
+
+// recursive factorial
