@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript event</title>
+</head>
+<body>
+    <h1>Exploring Event</h1>
+    <button onclick="clickMe()">Click me</button>
+    <p id="date"></p>
+    <button id="bgColorChange">BG Color</button>
+    <button id="lastbtn">Last btn</button>
+    <script>
+        function clickMe() {
+            console.log('click me');
+            var date = new Date();
+            document.getElementById('date').innerHTML = date;
+        }
+        function bgColor(){
+            document.body.style.backgroundColor = 'tomato';
+        }
+        // var bgColorChange = document.getElementById('bgColorChange');
+        // bgColorChange.onclick = bgColor;
+
+
+
+        var bgColorChange = document.getElementById('bgColorChange');
+        bgColorChange.addEventListener('click', bgColor);
+
+
+        const lastbtn = document.getElementById('lastbtn').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'red';
+        });
+    </script>
+</body>
+</html>
