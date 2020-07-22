@@ -19,7 +19,7 @@
         <h2>asad santo 10</h2>
     </header>
     <section>
-        <article>
+        <article class="">
             <h3>article-1</h3>
             <p class="author">author-1</p>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam repellendus minus eius libero est omnis earum mollitia sed autem? Veniam aut labore eveniet eligendi repudiandae vero corporis magni minima.</p>
@@ -29,34 +29,19 @@
             <p class="author">author-2</p>
             <p class="description">Distinctio officiis cum facilis incidunt doloribus, veritatis debitis quo ex vitae ad hic consequatur ipsa tenetur asperiores, perferendis voluptatem, iste alias autem quae! Libero deserunt veniam consequuntur sequi tempora ab.</p>
         </article>
-        <article>
+        <article class="special">
             <h3>article-3</h3>
             <p class="author">author-3</p>
             <p class="description">Nam corrupti facere voluptate, repudiandae maiores laudantium dolores eum ducimus fuga exercitationem, vitae optio magni labore, aspernatur architecto. Magnam at corporis consequuntur culpa voluptatibus repellendus delectus quibusdam quasi officia explicabo.</p>
         </article>
+        <article class="special">
+            <h3>article-1</h3>
+            <p class="author">author-1</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam repellendus minus
+                eius libero est omnis earum mollitia sed autem? Veniam aut labore eveniet eligendi repudiandae vero corporis
+                magni minima.</p>
+        </article>
     </section>
-    <script>
-        //console.log(45);
-        //alert("santo");
-        var first = document.getElementById('first');
-        first.style.color = 'red';
-        first.style.backgroundColor = '#fff';
-        first.style.fontSize = '30px';
-
-
-        var authors = document.getElementsByClassName('author');
-        //console.log(authors);
-        for(var i = 0; i < authors.length; i++){
-            var element = authors[i];
-            console.log(element);
-            console.log(element.innerHTML);
-            element.style.color = 'tomato';
-            element.style.backgroundColor = 'lightblue';
-            element.innerHTML = 'change' + i;
-            element.innerHTML = 'change' + (i + 1);
-            console.log(element.innerHTML);
-        }
-    </script>
     <script src="main.js"></script>
 </body>
 </html>
